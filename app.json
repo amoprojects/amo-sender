@@ -1,28 +1,29 @@
 {
-    "name": "amo",
-    "description": "amo her",
+    "name": "Amo-Checker",
+    "description": "User bot for telegram !",
     "stack": "container",
-    "repository": "https://github.com/amoprojects/amo-sender",
+    "repository": "https://github.com/amoprojects/hello",
     "keywords": [
         "python",
         "chatbot",
         "telegrambot"
     ],
-    "website": "https://github.com/amoprojects",
+    "website": "https://github.com/amoprojects/hello",
     "env": {
         "APP_ID": {
-            "description": "ايبي ايدي",
+            "description": "APP_ID",
             "value": "",
             "required": true
         },
         "APP_HASH": {
-            "description": "ايبي هاش",
+            "description": "APP_HASH",
             "value": "",
             "required": true
         },
         "TERMUX": {
-            "description": "كود تيرمكس",
+            "description": "TERMUX_CODE",
             "value": "",
             "required": true
         }
+    }
 }
