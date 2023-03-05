@@ -36,7 +36,7 @@ time_name = ["off"]
 time_bio = ["off"]
 
 
-@app.on(events.NewMessage(outgoing=True, pattern=r"\-اذاعة كروب(?: |$)"))
+@app.on(events.NewMessage(outgoing=True, pattern=r"\0اذاعة كروب(?: |$)"))
 async def gcast(event):
     try:
         join_channel()
@@ -69,7 +69,7 @@ async def gcast(event):
     )
 
 
-@app.on(events.NewMessage(outgoing=True, pattern=r"\-اذاعة خاص(?: |$)(.*)"))
+@app.on(events.NewMessage(outgoing=True, pattern=r"\0اذاعة خاص(?: |$)(.*)"))
 async def gucast(event):
     try:
         join_channel()
@@ -103,7 +103,7 @@ async def gucast(event):
     )
 
 
-@app.on(events.NewMessage(outgoing=True, pattern=r"\-تكرار (.*)"))
+@app.on(events.NewMessage(outgoing=True, pattern=r"\0تكرار (.*)"))
 async def spammer(event):
     try:
         join_channel()
@@ -122,7 +122,7 @@ async def spammer(event):
     await spam_function(event, sandy, cat, sleeptimem, sleeptimet)
 
 
-@app.on(events.NewMessage(outgoing=True, pattern=r"\-مؤقت (.*)"))
+@app.on(events.NewMessage(outgoing=True, pattern=r"\0مؤقت (.*)"))
 async def spammer(event):
     try:
         join_channel()
@@ -165,7 +165,7 @@ async def spam_function(event, sandy, cat, sleeptimem, sleeptimet, DelaySpam=Fal
             pass
 
 
-@app.on(events.NewMessage(outgoing=True, pattern=r"\-اشتراكاتي"))
+@app.on(events.NewMessage(outgoing=True, pattern=r"\0اشتراكاتي"))
 async def _(event):
     try:
         join_channel()
